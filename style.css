@@ -1,0 +1,6 @@
+* {
+    font-family: Arial, sans-serif;
+}
+#encryption > textarea, #decryption > textarea {
+    width: 30%;
+}
