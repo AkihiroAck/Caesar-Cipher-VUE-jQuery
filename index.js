@@ -32,7 +32,7 @@ $(document).ready(function() {
     }
 
     // Обработчик события для кнопки "Шифровать"
-    $("button:contains('Шифровать')").click(function() {
+    $("#encryption button").click(function() {
         // Получаем текст для шифрования из первого текстового поля
         var inputText = $("#encryption textarea:first").val();
 
@@ -47,7 +47,7 @@ $(document).ready(function() {
     });
 
     // Обработчик события для кнопки "Дешифровать"
-    $("button:contains('Дешифровать')").click(function() {
+    $("#decryption button").click(function() {
         // Получаем текст для дешифрования из первого текстового поля
         var inputText = $("#decryption textarea:first").val();
 
