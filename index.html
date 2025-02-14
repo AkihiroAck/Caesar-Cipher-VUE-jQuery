@@ -10,27 +10,37 @@
     <main>
         <h1>Шифр Цезаря</h1>
 
-        <div>
-            <h2>Шифрование:</h2>
+        <hr>
+
+        <div class="block">
             <label id="encryption">
-                <textarea placeholder="Текст для шифрования" rows="6" maxlength="1000"></textarea>
-                <textarea placeholder="Результат" rows="6" readonly></textarea>
+                <h2>Шифрование:</h2>
                 <label for="encryption-shift">Число итераций (n):</label>
                 <input type="number" id="encryption-shift" value="3" min="1" max="25">
+                <div>
+                    <textarea placeholder="Текст для шифрования" rows="6"></textarea>
+                    <textarea placeholder="Результат" rows="6" readonly></textarea>
+                </div>
                 <button>Шифровать</button>
             </label>
         </div>
 
+        <hr>
+
         <div>
-            <h2>Дешифрование:</h2>
             <label id="decryption">
-                <textarea placeholder="Текст для дешифрования" rows="6" maxlength="1000"></textarea>
-                <textarea placeholder="Результат" rows="6" readonly></textarea>
+                <h2>Дешифрование:</h2>
                 <label for="decryption-shift">Число итераций (n):</label>
                 <input type="number" id="decryption-shift" value="3" min="1" max="25">
+                <div>
+                    <textarea placeholder="Текст для дешифрования" rows="6"></textarea>
+                    <textarea placeholder="Результат" rows="6" readonly></textarea>
+                </div>
                 <button>Дешифровать</button>
             </label>
         </div>
+
+        <hr>
 
     </main>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
