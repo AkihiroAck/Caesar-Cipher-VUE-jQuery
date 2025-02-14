@@ -10,31 +10,30 @@
     <main>
         <h1>Шифр Цезаря</h1>
 
-        <div id="encryption-section">
+        <div>
             <h2>Шифрование:</h2>
             <label id="encryption">
-                <textarea placeholder="Текст для шифрования" rows="6" maxlength="1000" v-model="encryptionText"></textarea>
-                <textarea placeholder="Результат" rows="6" readonly>{{ encryptedText }}</textarea>
+                <textarea placeholder="Текст для шифрования" rows="6" maxlength="1000"></textarea>
+                <textarea placeholder="Результат" rows="6" readonly></textarea>
                 <label for="encryption-shift">Число итераций (n):</label>
-                <input type="number" v-model="shift" value="3" min="1" max="25">
-                <button @click="encryptText">Шифровать</button>
+                <input type="number" id="encryption-shift" value="3" min="1" max="25">
+                <button>Шифровать</button>
             </label>
         </div>
 
-        <div id="decryption-section">
+        <div>
             <h2>Дешифрование:</h2>
             <label id="decryption">
-                <textarea placeholder="Текст для дешифрования" rows="6" maxlength="1000" v-model="decryptionText"></textarea>
-                <textarea placeholder="Результат" rows="6" readonly>{{ decryptedText }}</textarea>
+                <textarea placeholder="Текст для дешифрования" rows="6" maxlength="1000"></textarea>
+                <textarea placeholder="Результат" rows="6" readonly></textarea>
                 <label for="decryption-shift">Число итераций (n):</label>
-                <input type="number" v-model="decryptionShift" value="3" min="1" max="25">
-                <button @click="decryptText">Дешифровать</button>
+                <input type="number" id="decryption-shift" value="3" min="1" max="25">
+                <button>Дешифровать</button>
             </label>
         </div>
 
     </main>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
     <script src="index.js"></script>
 </body>
 </html>
