@@ -1,6 +1,38 @@
 * {
     font-family: Arial, sans-serif;
 }
-#encryption > textarea, #decryption > textarea {
+
+body {
+    height: 100%;
+    margin: 0;
+    background-color: #0D1117;
+}
+
+main {
+    color: #D5DBE1;
+    margin: 25px;
+}
+
+.block {
+    margin-bottom: 25px;
+}
+
+#encryption textarea, #decryption textarea {
     width: 30%;
+    background-color: #181e28;
+    color: #D5DBE1;
+    user-select: none;
+}
+
+#encryption button, #decryption button {
+    height: 50px;
+    width: calc(60% + 20px);
+    background-color: #181e28;
+    color: #D5DBE1;
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+
+textarea:focus {
+    outline: none;
 }
